@@ -26,7 +26,8 @@ if __name__ == "__main__":
 
     data_dict = {'Name':['Hrithik', 'Shannon', 'Niamh', 'Jacob'],
                  'Role':['MLOps Engineer', 'AI Engineer', 'Data Scientist', 'Data Analyst'],
-                 'Age':[27, 25, 28, 40]}
+                 'Age':[27, 25, 28, 40],
+                 'Place':['Dublin', 'Cork', 'Galway', 'Meath']}
 
     ingestion = DataIngestion(data_dict=data_dict)
     print(ingestion.save_data(os.path.join(os.getcwd()+"/data/data.csv")))
